@@ -1,16 +1,24 @@
-@value h-font-family, text-font-family from "_theme/var.css";
-
 :global {
     html, body, #app {
         padding: 0;
         margin: 0;
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        font-family: h-font-family;
+    h1, 
+    h2, 
+    h3,
+    h4, 
+    h5, 
+    h6 {
+        font-family: var(--main-font-family);
     }
 
-    p, span {
-        font-family: text-font-family;
+    p {
+        font-family: var(--desc-font-family);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 }
