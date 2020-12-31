@@ -1,3 +1,13 @@
 :root {
-    --pizza-red         : #f44336;
+    --bg                : 255, 255, 255;
+    --theme-primary     : 244, 67, 54;
+    --shadow-accent     : 56, 5, 2;
+
+    --z-index-extreme   : 9;
+    --z-index-high      : 6;
+    --z-index-medium    : 3;
+    --z-index-low       : 1;
+
+    --main-font-family  : "Righteous", -apple-system, system-ui;
+    --desc-font-family  : "Open Sans", -apple-system, system-ui;
 }
