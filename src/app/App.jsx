@@ -1,22 +1,16 @@
-// Core
 import { hot } from "react-hot-loader/root";
-import { createGlobalStyle } from "styled-components";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "_routes/Routes";
 
-// Styles
-import "normalize.css";
+import { Normalize } from "styled-normalize";
 import "_theme/main.css";
-
-const GlobalStyle = createGlobalStyle`
-    body {
-        background-color: blue;
-    }
-`;
 
 const App = () => (
     <React.StrictMode>
-        <GlobalStyle />
-        <h1>Hello world</h1>
-        <span> Font check </span> 
+        <Normalize />
+        <BrowserRouter>
+            <Routes />
+        </BrowserRouter>
     </React.StrictMode>
 );
 
